@@ -13,3 +13,14 @@ if __name__ == '__main__':
         else:
             print(arr[i-2])
             break
+ 
+    #  Another Way to do it
+
+    a = max(arr)
+    c = arr.count(a)
+    print(c)
+
+    for i in range(c):
+        arr.remove(a)
+    
+    print(max(arr))
